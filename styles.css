@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+ :root{
+  --fondo: #581854;
+  --fondo1:#440F40;
+  --logo: #ffc30f;
+  --text: #ff5733;
+  --rojo: #c70039;
+  --granate: #900c3f;
+
+ }
+
+ html{
+  font-size: 62,5%;
+  overflow-x:hidden;
+  background-color: #440F40;
+ 
+ }
+
+ .header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 7%;
+  background: #581854;
+  display:flex;
+  align-items: center;
+  z-index:100 ;
+  border-bottom: black solid 1.2px;
+
+ }
+
+ .logo{
+  font-size: 2rem;
+  color: #ffc30f;
+  font-weight: 600;
+  cursor: default ;
+  margin-right: auto ;
+ }
+
+ .navbar a {
+  position: relative;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 500;
+  margin-right: 3rem;
+ }
+.navbar a.active:hover{
+  color:#ff5733;
+  text-decoration-line:line-through;
+}
+
+#darkMode-icon{
+  font-size: 2.2rem;
+  color: white;
+  cursor: pointer;
+}
+#darkMode-icon:hover{
+  color:#ffc30f;
+
+}
+ section{
+    position:relative;
+    display: flex;
+    color: rgb(255, 255, 255);
+ }
+
+ section{
+    margin-top: 5%;
+    min-height: 100%;
+    padding: 1rem 0% 2rem;
+ }
+
+ .home{
+    display: flex;
+    padding: 0 7%;
+    background: #440F40
+
+ }
+
+ .home-content{
+    max-width: 50rem;
+    
+ }
+ .home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+ }
+ .home-content .text-animate{
+    position: relative;
+    width: 32.8rem;
+ }
+
+ .home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px #ffc30f;
+ }
+
+ .home-content p {
+    font-size: 1.3rem;
+    margin: 2 rem 0 4 rem;
+ }
+
+ .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 35.5rem;
+    height: 5rem;
+    
+ }
+ .btn-box .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 100%;
+    background-color: #ff5733;
+    border: .2rem solid #ff5733;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color:#581854;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    z-index: 1;
+    overflow: hidden;
+ }
+ 
+ .btn-box .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0%;
+    height: 100%;
+    background-color: #ffc30f;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box .btn:hover::before{
+width: 100%;
+} 
+.home-sci{
+    position:absolute;
+    bottom: -6rem;
+    width: 13rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    align-items: center;
+    
+    
+}
+.home-sci a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: .2rem solid #ff5733;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.home-sci a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:  #900c3f;
+    z-index: -1;
+    transition: .5s;
+
+}
+.home-sci a:hover::before{
+width: 100%;
+}
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37%;
+    height: 100%;
+    background: transparent;
+    transition: 1s;
+
+}
+.home-imgHover:hover{
+    background-color: #440F40;
+    opacity: .6;
+    
+}
+
+
+img{ 
+    width: 530px;
+    margin-left: 20%;
+   
+
+}
+
+span{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width:12ch ;
+    
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate; 
+    overflow :hidden;
+}
+@keyframes typing{
+from{width: 0}
+}
+@keyframes blink {
+    50% {border-color:transparent}
+}
